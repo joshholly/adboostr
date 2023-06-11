@@ -10,7 +10,7 @@ Free HTML, CSS, JavaScript template for ad agencies and similar sites. Created w
 
 ## Sections / Features
 
-- Hero with Video
+- Hero with Background Video
 - About
 - Services
 - Testimonials with Testimonial Swiper Slide
