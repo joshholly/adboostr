@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.swiper-pagination-bullet {
+  display: inline-block !important;
+}
+
+@layer components {
+    .headline {
+      @apply text-3xl font-bold text-center text-gray-800 mb-2;
+    }
+    .subhead {
+        @apply text-xl text-center text-gray-600 mb-16;
+    }
+    .iconContainer {
+        @apply mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6;
+    }
+    .contactIcon {
+        @apply p-4 bg-blue-500 rounded-md shadow-md w-14 h-14 flex items-center justify-center;
+    }
+    .submitButton {
+        @apply  w-full px-6 py-2.5 bg-blue-500 text-white font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out
+    }
+    .checkBox {
+        @apply  h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer;
+    }
+    .textArea {
+        @apply shadow 
+        appearance-none 
+        border 
+        border-blue-500 
+        focus:border-2 
+        focus:border-blue-500  
+        rounded-lg
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+
+   
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white  focus:outline-none;
+    }
+    .contactInput {
+        @apply block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        shadow 
+        appearance-none 
+        border 
+        border-blue-500 
+        focus:border-2 
+        focus:border-blue-500  
+        rounded-lg
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:outline-none;
+    }
+    .swiper-slide {
+       @apply min-h-full relative mt-4 text-gray-50 flex-grow;
+    }
+    .faIcon {
+        @apply fas fa-mobile-alt text-purple-500 text-4xl mb-4;
+    }
+    .serviceHeadline {
+        @apply text-2xl font-bold text-gray-800 mb-4;
+    }
+    .hero {
+        @apply relative flex items-center justify-center min-h-screen;
+    }
+    .heroVideo {
+       @apply absolute z-10 w-full h-full object-cover;
+    }
+    .heroOverlay {
+        @apply absolute z-20 w-full h-full bg-black bg-opacity-50;
+    }
+    .heroText {
+        @apply z-30 text-center p-4 sm:p-6 lg:p-8;
+    }
+    .heroHeadline {
+        @apply text-4xl sm:text-5xl lg:text-6xl text-white font-bold mb-4;
+    }
+    .heroSub {
+        @apply text-xl sm:text-2xl text-white mb-6;
+    }
+    .aboutSection {
+       @apply bg-gray-200 relative overflow-hidden
+    }
+    .aboutContainer {
+       @apply container mx-auto px-6 py-20 z-10 relative
+    }
+    .aboutTextContainer {
+       @apply lg:flex justify-between items-center
+    }
+    .aboutText {
+       @apply lg:w-6/12 lg:p-8 text-center lg:text-left;
+    }
+    .aboutBg {
+        @apply absolute inset-0 bg-gray-100 transform skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg;
+    }
+    .footer {
+        @apply bg-gray-900 py-4;
+    }
+    .navBar {
+        @apply sticky top-0 z-50 flex items-center justify-between px-7 xl:px-40 py-5 lg:py-5  bg-gray-900;
+    }
+    .logoContainer {
+        @apply flex items-center flex-shrink-0 text-black mr-6;
+    }
+    .logo {
+        @apply font-semibold text-2xl text-white tracking-tight;
+    }
+    .logoIcon {
+        @apply text-blue-500 mr-2;
+    }
+    .linkItem {
+        @apply mr-9 font-medium text-white hover:text-white;
+    }
+    .navLink {
+        @apply font-medium hover:text-gray-500 text-white
+    }
+    .mobileNavContent {
+        @apply absolute top-16 right-0 w-48 bg-white rounded-lg shadow-lg py-2 transition duration-300;
+    }
+    .mobileNavLink {
+        @apply block px-4 py-2 text-gray-800 hover:bg-gray-500 hover:text-white;
+    }
+    .btnBlue {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+    .btnGray {
+        @apply bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+    .blockQuote {
+        @apply flex flex-col bg-gray-500 shadow-md rounded p-6 min-h-full;
+    }
+    .testimonialContent {
+        @apply flex items-center gap-4;
+    }
+    .testimonialImage {
+        @apply h-16 w-16 rounded-full object-cover;
+    }
+    .testimonialText {
+        @apply relative mt-4 text-gray-50 flex-grow;
+    }
+    .modal {
+        @apply w-11/12 md:w-1/2 p-5  bg-white rounded-md shadow-xl;
+    }
+    .modalContainer {
+        @apply flex justify-between items-center pb-3;
+    }
+    .modalHeadline {
+        @apply text-2xl font-bold text-black;
+    }
+    .closeBtn {
+        @apply cursor-pointer z-50;
+    }
+  }
